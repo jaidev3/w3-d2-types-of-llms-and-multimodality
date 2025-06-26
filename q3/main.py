@@ -99,12 +99,17 @@ def main():
         result = run_tool(tool, tool_input)
         answer = result
 
-    print("🤔 Reasoning:\n", reasoning)
+    print("=" * 50)
+    print("🤔 THINKING STEPS:")
+    print("=" * 50)
+    print(reasoning)
+    print("\n" + "=" * 50)
     print(f"🧰 Tool used: {tool}")
-    print("✅ Answer:", answer)
+    if tool != "none":
+        print(f"📝 Tool input: {tool_input}")
+    print("✅ Final Answer:", answer)
+    print("=" * 50)
 
 
 if __name__ == "__main__":
     main()
-    # print(string_tools.count_vowels("Hello, world!"))
-    # print(string_tools.count_letters("Hello, world!"))
