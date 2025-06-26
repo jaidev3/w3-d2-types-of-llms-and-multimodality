@@ -119,6 +119,51 @@ Choose one of two methods:
 4. **Research**: Analyze data visualizations, charts, and graphs
 5. **Personal**: Ask questions about family photos, travel pictures, or documents
 
+## 🖼️ Screenshots
+
+Below are example screenshots demonstrating the app in action:
+
+1. **Home Screen & API Key Entry**
+   - ![Screenshot: Home and API Key](src/assets/Screenshot-1.png)
+2. **Image Upload & Question**
+   - ![Screenshot: Image Upload](src/assets/Screenshot-2.png)
+3. **AI Response Display**
+   - ![Screenshot: AI Response](src/assets/Screenshot-4.png)
+
+> _Replace the above image links with your own screenshots placed in `src/assets/` or another appropriate directory._
+
+## 🤖 LLM APIs Used
+
+This application uses the following OpenAI models:
+
+- **GPT-4o**: Used for multimodal (image + text) questions. Chosen for its advanced vision and reasoning capabilities, enabling detailed analysis and description of images.
+- **GPT-4o-mini**: Used for text-only questions. Selected for its speed and efficiency when image input is not required.
+
+**Why these models?**
+- GPT-4o provides state-of-the-art performance for both vision and language tasks, making it ideal for answering questions about images.
+- GPT-4o-mini is a lightweight variant, reducing latency and cost for text-only queries.
+
+## 🧪 Sample Outputs / Test Report
+
+Below are three example image-question pairs and the AI's responses:
+
+### 1. Image: A photo of a busy city street
+**Question:** What objects do you see in this image?
+**AI Response:**
+> I see several cars, buses, and bicycles on the street. There are people walking on the sidewalks, traffic lights, and tall buildings in the background. Some trees and street signs are also visible.
+
+### 2. Image: A bar chart showing sales data
+**Question:** Which product had the highest sales?
+**AI Response:**
+> The product labeled "Product C" had the highest sales, as indicated by the tallest bar in the chart.
+
+### 3. Image: A group photo of people at a beach
+**Question:** How many people are in this image, and what are they doing?
+**AI Response:**
+> There are six people in the image. They appear to be smiling and posing for the photo, with some holding beach balls and others standing near the water. The weather looks sunny and pleasant.
+
+> _You can generate your own test cases by uploading images and asking questions. The above are representative outputs._
+
 ## 🚧 Development
 
 ### Available Scripts
