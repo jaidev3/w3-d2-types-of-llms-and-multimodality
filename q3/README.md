@@ -1,6 +1,35 @@
 # Q3 Project
 
-This project contains utility tools and a main application.
+This project contains utility tools and a main application that uses OpenAI's GPT model to solve mathematical and string manipulation problems.
+
+## Setup
+
+### API Key Configuration
+
+This application requires an OpenAI API key to function. Set up your API key using one of these methods:
+
+Add api key in main.py file itself
+
+**Method 1: Environment Variable (Recommended)**
+```bash
+# Windows (PowerShell)
+$env:OPENAI_API_KEY="your-api-key-here"
+
+# Windows (Command Prompt)
+set OPENAI_API_KEY=your-api-key-here
+
+# macOS/Linux
+export OPENAI_API_KEY="your-api-key-here"
+```
+
+**Method 2: .env File**
+1. Create a `.env` file in the `q3/` directory
+2. Add your API key:
+```
+OPENAI_API_KEY=your-api-key-here
+```
+
+> **Note:** Get your API key from [OpenAI's platform](https://platform.openai.com/api-keys)
 
 ## Structure
 
